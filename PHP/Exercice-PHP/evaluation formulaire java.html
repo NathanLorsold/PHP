@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet"media="screen and (max-width:575px)" href="/fichier.css">
+        <link rel="stylesheet"media="screen and (min-width:576px)" href="/fichier.css">
+        <link rel="stylesheet"media="screen and (min-width: 992px)" href="/fichier.css"> 
+        <link rel="stylesheet" href="/fichier.css">
+            <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+
+    </head>
+<body>
+    <header>
+        <img src="/img/jarditou_logo.jpg" width="300" height="100"  alt="Jardi" title="logo">
+        
+        <div class="structure">
+        
+        <ul>
+        
+            <li>
+        
+        
+                        <a href="/Ex/Index.html">Accueil</a>
+                        <a href="/Jtableau.html">Tableau</a>
+                        <a href="/Jformulaire.html">Formulaire</a>
+    
+        
+            </li>
+        
+        </ul>
+        
+        </div>
+        
+        <div>
+        
+            <img src="/img/promotion.jpg" width="1830" height="250" title="bannière">
+        
+        </div>
+        </header>
+    <hr>
+
+    <h3>Contact</h3>
+
+    <form action="http://127.0.0.1:8080/script.php" method="post"name="formulaire" id="formulaire" novalidate>
+        <p>*Ces zones sont obligatoires </p>
+        <fieldset>
+            <legend>Vos Coordonnées</legend>
+            <label for="nom">Votre nom* :</label> <input type="text" name="nom" id="nom" required><br>
+            <span id='missNom'></span></span><br>
+            <label for="prenom"> Votre prénom* :</label><input type="text" name="prenom" id="prenom"> <br>
+            <span id='missPrenom'></span></span><br> 
+
+            <label for="Sexe">Sexe*: </label>
+            <input type="radio" name="Féminin" value="Féminin" id="femme"> Féminin
+            <input type="radio" name="Féminin" value="Masculin" id="homme"> Masculin 
+            <br> <span id='missSexe'></span></span> <br> 
+            <label for="date">Date de naissance*:</label> <input type="date" name="ddn" id="birthday"> <br>
+            <span id='missBirthday'></span> <br>
+            <label for="date">Code postal*: <input type="text" name="codepostal" id="CP"> </label> <br>
+            <span id='missCP'></span> <br>
+            <label for="nom">Adresse: <input type="text" name="adresse" id="Adresse"> </label> <br>
+            <span id='missAdresse'></span> <br>
+            <label for="nom">Ville: <input type="text" name="ville" id="Ville"> </label> <br>
+            <span id='missVille'></span> <br>
+            <label for="?">Email*:<input type="email" name="email" placeholder="Dave.loper@afpa.fr" id="email"> </label> <br>
+            <span id='missEmail'></span> <br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Votre demande </legend>
+            <label for="sujet"> Sujet*:<input type="text" placeholder="Veuillez sélectionner un sujet" name="sujet1" id="sujet2" list="sujet3"> </label> <br>
+            <span id='missSujet'></span> <br>
+
+            <datalist id="sujet3">
+                    <option value="Mes commandes">
+                    <option value="Question sur un produit">
+                    <option value="Réclamation">
+                    <option value="Autres">
+
+            </datalist>
+
+            <label for="question">Votre question*: </label>
+            <textarea name="commentaire" rows="1" cols="25" id="quest">  </textarea> <br>
+            <span id='missQuestion'></span> <br>
+
+        </fieldset>
+
+        <input type="radio" name="check" id="checkbox"> * J'accepte le traitement informatique de ce formulaire <br>
+        <span id='missCheck'></span> <br>
+
+        <button type="submit">Envoyer</button> 
+        <button type="reset">Quitter</button>
+
+    </form>
+    <footer>
+
+        <div class="structure">
+            
+            <ul>
+            
+                <li>
+            
+            
+                            <a href="#">Mentions légales </a>
+                            <a href="#">Horaires</a>
+                            <a href="#">Plan du site</a>
+             
+            
+                </li>
+            
+            </ul>
+            
+            </div>
+    </footer>
+    <script src="eval js.js"></script>
+</body>
+
+</html>
